@@ -140,3 +140,5 @@ def admin_reset():
     except psycopg.OperationalError as e:
         raise HTTPException(status_code=503, detail=f"db unreachable: {e}") from e
     return {"ok": True, "message": "notes table dropped and recreated (empty)"}
+
+# pipeline test marker
